@@ -12,7 +12,7 @@ namespace CleanArchWithCQRS.Domain.Models
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public  string? FName { get; set; }
-
+        public bool Status { get; set; } = true;
         public List<PhoneNumber> PhoneNumbers { get; set; } = [];
         public List<Tuition> Tuitions { get; set; } = [];
     }

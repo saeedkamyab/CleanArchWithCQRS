@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace CleanArchWithCQRS.Domain.Models
 {
-    public class Tuition:BaseEntity
+    public class Tuition : BaseEntity
     {
         public DateTime PayDate { get; set; }
         public double Amount { get; set; }
+        public bool status { get; set; }
         public string? Comment { get; set; }
 
 
