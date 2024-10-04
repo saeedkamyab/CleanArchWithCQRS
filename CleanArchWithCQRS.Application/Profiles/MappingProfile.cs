@@ -18,6 +18,8 @@ namespace CleanArchWithCQRS.Application.Profiles
         #region student Mapps
         CreateMap<Student,StudentDto>().ReverseMap();
         CreateMap<Student,CreateStudent>().ReverseMap();
+        CreateMap<Student,UpdateStudentDto>().ReverseMap();
+        CreateMap<Student,ChangeStatusDto>().ReverseMap();
         #endregion
             
         }
