@@ -17,13 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{94AAA84A-6BC6-4118-BFD0-743AC7C691AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRS.Domain", "CleanArchWithCQRS.Domain\CleanArchWithCQRS.Domain.csproj", "{D88244FA-9984-40BB-A64E-907C0DA7962F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRS.Domain", "CleanArchWithCQRS.Domain\CleanArchWithCQRS.Domain.csproj", "{D88244FA-9984-40BB-A64E-907C0DA7962F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRS.Application", "CleanArchWithCQRS.Application\CleanArchWithCQRS.Application.csproj", "{15943D31-27CE-47D3-A27B-99FEFB0FD9DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRS.Application", "CleanArchWithCQRS.Application\CleanArchWithCQRS.Application.csproj", "{15943D31-27CE-47D3-A27B-99FEFB0FD9DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRS.Infrastructure", "CleanArchWithCQRS.Infrastructure\CleanArchWithCQRS.Infrastructure.csproj", "{3540AC52-110B-4B49-B2D8-4D7E4D175773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRS.Infrastructure", "CleanArchWithCQRS.Infrastructure\CleanArchWithCQRS.Infrastructure.csproj", "{3540AC52-110B-4B49-B2D8-4D7E4D175773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRS.Persistance", "CleanArchWithCQRS.Persistance\CleanArchWithCQRS.Persistance.csproj", "{053870E8-A4EC-409A-B226-9B7D83AB8E20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchWithCQRS.Persistance", "CleanArchWithCQRS.Persistance\CleanArchWithCQRS.Persistance.csproj", "{053870E8-A4EC-409A-B226-9B7D83AB8E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchWithCQRS.Api", "CleanArchWithCQRS.Api\CleanArchWithCQRS.Api.csproj", "{6DB15FBC-F962-4C67-8082-466C9355E22B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{053870E8-A4EC-409A-B226-9B7D83AB8E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{053870E8-A4EC-409A-B226-9B7D83AB8E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{053870E8-A4EC-409A-B226-9B7D83AB8E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB15FBC-F962-4C67-8082-466C9355E22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB15FBC-F962-4C67-8082-466C9355E22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB15FBC-F962-4C67-8082-466C9355E22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB15FBC-F962-4C67-8082-466C9355E22B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{15943D31-27CE-47D3-A27B-99FEFB0FD9DD} = {D9679609-0C55-4FCE-B17D-EDA9B1B80365}
 		{3540AC52-110B-4B49-B2D8-4D7E4D175773} = {D2B047CD-3762-4F0A-BEB9-5F5D1C40640C}
 		{053870E8-A4EC-409A-B226-9B7D83AB8E20} = {D2B047CD-3762-4F0A-BEB9-5F5D1C40640C}
+		{6DB15FBC-F962-4C67-8082-466C9355E22B} = {2BBB5E6C-CA88-4E40-8A56-3457557C3F7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B152435-ECD9-439C-897B-B7AECB21DE68}
