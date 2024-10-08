@@ -1,5 +1,6 @@
 using CleanArchWithCQRS.Application;
 using CleanArchWithCQRS.Persistance;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,18 @@ builder.Services.AddCors(o =>
 {
 o.AddPolicy("corsPolicy",b=>b.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Configure the HTTP request pipeline.
 
