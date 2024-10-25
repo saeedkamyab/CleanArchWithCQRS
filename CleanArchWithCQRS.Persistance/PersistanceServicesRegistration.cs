@@ -24,6 +24,7 @@ namespace CleanArchWithCQRS.Persistance
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IPhoneNumberRepository, PhoneNumberRepository>();
 
             return services;
         }

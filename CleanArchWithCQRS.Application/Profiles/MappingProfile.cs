@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CleanArchWithCQRS.Application.Dtos.PhoneNumberDtos;
 using CleanArchWithCQRS.Application.Dtos.StudentDtos;
 using CleanArchWithCQRS.Domain.Models;
 using System;
@@ -15,13 +16,18 @@ namespace CleanArchWithCQRS.Application.Profiles
         public MappingProfile()
         {
 
-        #region student Mapps
-        CreateMap<Student,StudentDto>().ReverseMap();
-        CreateMap<Student,CreateStudent>().ReverseMap();
-        CreateMap<Student,UpdateStudentDto>().ReverseMap();
-        CreateMap<Student,ChangeStatusDto>().ReverseMap();
-        #endregion
+            #region student Mapps
+            CreateMap<Student, StudentDto>().ReverseMap();
+            CreateMap<Student, CreateStudent>().ReverseMap();
+            CreateMap<Student, UpdateStudentDto>().ReverseMap();
+            CreateMap<Student, ChangeStatusDto>().ReverseMap();
+            #endregion
+
+            #region PhoneNumber Mapps
+            CreateMap<PhoneNumber, PhoneNumberDto>().ReverseMap();
             
+            #endregion
+
         }
     }
 }
