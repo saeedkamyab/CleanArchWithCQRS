@@ -24,7 +24,8 @@ namespace CleanArchWithCQRS.Application.Features.Student.Handlers.Commands
 
         public async Task<Unit> Handle(DeleteStudentRequestCommand request, CancellationToken cancellationToken)
         {
-            await _studentRepository.Delete(request.Id);
+            var student = await _studentRepository.Get(request.Id);
+            await _studentRepository.Delete(student);
             return Unit.Value;
         }
     }
